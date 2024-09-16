@@ -6,7 +6,7 @@
 /*   By: alirola- <alirola-@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 17:08:54 by alirola-          #+#    #+#             */
-/*   Updated: 2024/09/16 17:40:25 by alirola-         ###   ########.fr       */
+/*   Updated: 2024/09/16 22:57:19 by alirola-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ Fixed::Fixed()
 Fixed::Fixed(int const value)
 {
 	std::cout << "Int constructor called\n";
-	this->_raw_bits = (value << _bits);
+	_raw_bits = value << _bits;
 }
 
 Fixed::Fixed(float const value)
@@ -51,7 +51,7 @@ Fixed::~Fixed()
 int Fixed::getRawBits(void) const
 {
 	std::cout << "getRawBits function called\n";
-	return(this->_raw_bits);
+	return(_raw_bits);
 }
 
 void Fixed::setRawBits(int const raw)

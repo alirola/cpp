@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: alirola- <alirola-@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/16 17:28:44 by alirola-          #+#    #+#             */
-/*   Updated: 2024/09/16 23:05:30 by alirola-         ###   ########.fr       */
+/*   Created: 2024/09/16 23:47:17 by alirola-          #+#    #+#             */
+/*   Updated: 2024/09/17 00:02:31 by alirola-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,18 @@
 int main(void)
 {
 	Fixed a;
-	Fixed const b( 10 );
-	Fixed const c( 42.42f );
-	Fixed const d( b );
-
-	a = Fixed( 1234.4321f );
+	Fixed const b( Fixed( 5.05f ) * Fixed( 2 ) );
 	
-	std::cout << "a is " << a << "\n";
-	std::cout << "b is " << b << "\n";
-	std::cout << "c is " << c << "\n";
-	std::cout << "d is " << d << "\n";
+	std::cout << a << std::endl;
+	std::cout << ++a << std::endl;
+	std::cout << a << std::endl;
+	std::cout << a++ << std::endl;
+	std::cout << a << std::endl;
 	
-	std::cout << "a is " << a.toFloat() << " as integer" << "\n";
-	std::cout << "b is " << b.toInt() << " as integer" << "\n";
-	std::cout << "c is " << c.toInt() << " as integer" << "\n";
-	std::cout << "d is " << d.toInt() << " as integer" << "\n";
+	std::cout << b << std::endl;
 	
-	return (0);
+	std::cout << Fixed::max( a, b ) << std::endl;
+	
+	return 0;
 }
+

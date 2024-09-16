@@ -6,7 +6,7 @@
 /*   By: alirola- <alirola-@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 17:03:03 by alirola-          #+#    #+#             */
-/*   Updated: 2024/09/16 17:39:08 by alirola-         ###   ########.fr       */
+/*   Updated: 2024/09/16 23:03:38 by alirola-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,5 @@ class Fixed
 			int toInt(void) const; //return FP value as int
 			float toFloat(void) const; //return FP value as float
 };
+
+std::ostream& operator << (std::ostream& out, const Fixed& nbr);
