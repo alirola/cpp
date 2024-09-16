@@ -6,7 +6,7 @@
 /*   By: alirola- <alirola-@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/13 17:04:48 by alirola-          #+#    #+#             */
-/*   Updated: 2024/09/13 17:32:30 by alirola-         ###   ########.fr       */
+/*   Updated: 2024/09/16 13:53:04 by alirola-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Fixed::Fixed()
 {
-	int _raw_bits = 0;
+	_raw_bits = 3;
 	std::cout << "Default constructor called\n";
 }
 
@@ -36,7 +36,7 @@ Fixed &Fixed::operator=(const Fixed &src)
 
 Fixed::~Fixed()
 {
-	std::cout << "Destructor called";
+	std::cout << "Destructor called\n";
 }
 
 int Fixed::getRawBits(void) const
