@@ -1,4 +1,4 @@
-NAME = Polymorphism
+NAME = Brain
 
 CC = c++
 
@@ -12,6 +12,7 @@ SRC = Animal.cpp\
 		Dog.cpp\
 		WrongAnimal.cpp\
 		WrongCat.cpp\
+		Brain.cpp\
 
 OBJ = $(SRC:.cpp=.o)
 
